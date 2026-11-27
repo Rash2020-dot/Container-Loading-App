@@ -1,0 +1,6 @@
+{
+  "name": "Container Loading Dashboard",
+  "description": "Finished goods container loading and handling unit (HU) carton verification dashboard with Excel packing list import, barcode scanning, and automated email notifications.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

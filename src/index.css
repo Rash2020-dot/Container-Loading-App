@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #f1f5f9;
+    color: #0f172a;
+    margin: 0;
+    line-height: 1.5;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Original side-view container textures */
+.container-corrugation {
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.08) 0px,
+    rgba(255, 255, 255, 0.08) 10px,
+    rgba(0, 0, 0, 0.35) 10px,
+    rgba(0, 0, 0, 0.35) 20px
+  );
+}
+
+.cargo-grid-pattern {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.25) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.25) 1px, transparent 1px);
+  background-size: 14px 14px;
+}
+
+.truck-grille-pattern {
+  background-image: repeating-linear-gradient(
+    0deg,
+    #1e293b,
+    #1e293b 3px,
+    #475569 3px,
+    #475569 6px
+  );
+}
+
+@keyframes alertBlink {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-alert-blink {
+  animation: alertBlink 0.8s infinite;
+}
+
+@keyframes resumePulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.015);
+    background-color: #dc2626;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-resume-pulse {
+  animation: resumePulse 1.5s infinite;
+}
